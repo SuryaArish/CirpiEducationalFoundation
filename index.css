@@ -1,0 +1,1487 @@
+.hero {
+    background-image: url("./images/student_img.png");
+    background-size: cover;
+    background-position: center;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 5%;
+    align-items: center;
+}
+
+.hero_section {
+    background-color: rgb(255, 255, 255);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hero {
+    background-color: #e7f5fe;
+}
+
+.cirpi-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: #003257;
+}
+
+.hero-sub-title {
+    font-size: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #003257;
+    line-height: 100%;
+}
+
+.intro_container {
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+}
+
+
+.intro-head h1 {
+    font-size: 40px;
+    color: #003257;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.intro-text {
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    color: #003257;
+
+}
+
+.Intro-img {
+    width: 75%;
+    height: 80%;
+    z-index: 1;
+}
+
+.intro-text p {
+    font-size: 20px;
+    padding: 2% 2%;
+    text-align: justify;
+}
+
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 50, 87, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 50, 87, 0.2);
+}
+
+.card-body {
+    padding: 30px 25px;
+    color: #003257;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.mentor-card p{
+    color: #001f42;
+}
+.card-title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #003257;
+}
+
+.card-text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    flex-grow: 1;
+    color: #555;
+}
+
+#card1 {
+    background-color: #ffecf5;
+}
+
+#card2 {
+    background-color: #ebfff8;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+
+.og-con {
+    background-color: #e7f5fe;
+}
+
+
+.og-name {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #003257;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.our-vision {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+.our-vision h1 {
+    text-align: justify;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.og-container p {
+    color: #003257 !important;
+}
+
+.og-container h5  {
+    color: #003257 !important ;
+}
+
+.OG-contain {
+    padding: 3%;
+    margin-left: 2%;
+}
+
+
+.OG-title {
+    color: #003257;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.OG-title h1 {
+    font-weight: bold;
+}
+
+.OG-sub-title {
+    margin-right: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003257;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.OG-text {
+    color: #003257;
+    margin-right: 10%;
+}
+
+.transprent_place {
+    /* padding: 10%; */
+    background-image: url("./images/student_img-bg-1.png");
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.transprent_place h1 {
+    color: #001f42;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 64px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.OV {
+    background-color: #003257;
+    display: block;
+    place-items: center;
+    color: white;
+    padding-bottom: 0;
+}
+
+.OV p {
+    opacity: 0.8;
+}
+
+.OV-img {
+    width: 1500px;
+    height: 100%;
+}
+
+.OVR-contain {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 0;
+}
+
+.OVR-contain h1 {
+    font-size: 20px;
+}
+
+.OVR-contain p {
+    text-align: justify;
+}
+
+.OV p {
+    font-size: 20px;
+    padding-bottom: 3%;
+}
+
+
+.OM {
+    padding: 2%;
+    background-color: #ffffff;
+    place-items: center;
+}
+
+
+
+.OVM-contain h1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #003257;
+}
+
+.OVM-contain h1 {
+    font-size: 30px;
+}
+
+.our-Mission h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #003257;
+}
+
+.OV-img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OV-img-col img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.OV-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.our-Mission h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #003257;
+}
+
+
+.arrow-bullet li {
+    list-style: none;
+    padding-left: 5%;
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #003257;
+}
+
+.arrow-bullet li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #003257;
+    font-size: 18px;
+}
+
+.OM p {
+    font-size: 20px;
+    text-align: justify;
+    color: #003257;
+}
+
+
+.board-members {
+    color: #003257;
+    padding: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.board-members h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.btn {
+    color: #e7e7e7;
+    background-color: #001f42;
+    font-weight: bold;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 10%;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+
+    /* Center horizontally */
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    background-color: #c5f8ff;
+    color: #003257;
+}
+
+.OBI-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OBI-1 h1 {
+    padding-top: 5%;
+}
+
+.OBI-1 h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003257;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.OBI-1 p {
+    font-size: 14px;
+    color: #003257;
+}
+
+.our-board h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #003257;
+}
+
+
+.GI {
+    background-color: white;
+    display: block;
+    place-items: center;
+}
+
+.support_img {
+    width: 40% !important;
+    padding: 2%;
+}
+
+
+.GI-contain {
+    background-color: #e7f5fe !important;
+}
+
+.GI img {
+    width: 50%;
+    justify-content: center;
+    padding: 2%;
+}
+
+.GI p {
+    color: #003257;
+    padding: 5%;
+    font-size: 130%;
+    text-align: center;
+}
+
+.GI-contain h2 {
+    font-size: 36px;
+    color: #003257;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+.get-involved {
+
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 3%;
+}
+
+.get-involved h1 {
+    font-weight: bold;
+    color: #003257;
+}
+
+
+
+.footer {
+    padding: 40px 20px;
+    background-color: #003257;
+    color: white;
+}
+
+.footer-logo {
+    max-width: 250px;
+    height: auto;
+    margin-left: 20%;
+}
+
+.footer-logo-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #c8e7f5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #c8e7f5;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a i {
+    font-size: 20px;
+    color: #003257;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover i {
+    color: #001f42;
+}
+
+.contact-info h1 {
+    color: #c8e7f5;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.contact-info p i {
+    color: #6bcfff;
+    font-size: 22px;
+}
+
+.tagline {
+    color: #3b6c83;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+#blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    display: none;
+}
+
+.popup {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background: white !important;
+    padding: 30px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+    z-index: 1000 !important;
+    max-width: 500px !important;
+    width: 90% !important;
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+    display: none !important;
+}
+.cin-number{
+    font-size: 18px !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Desktop and Large Laptop Views */
+@media (min-width: 1200px) {
+    .card {
+        max-width: 600px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+
+    .Intro-img {
+        width: 60%;
+        max-width: 500px;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Laptop Views */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card {
+        max-width: 380px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-text {
+        font-size: 17px;
+    }
+
+    .Intro-img {
+        width: 65%;
+        max-width: 450px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+
+    .hero {
+        padding: 3%;
+    }
+
+    .cirpi-title {
+        font-size: 36px;
+    }
+
+    .hero-sub-title {
+        font-size: 18px;
+    }
+
+    .intro_container {
+        margin-top: 3%;
+    }
+
+    .intro-head h1 {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+        padding: 2%;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .card-body {
+        padding: 20px 15px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .OG-contain {
+        padding: 2%;
+        margin-left: 1%;
+    }
+
+    .OG-title {
+        padding-top: 2%;
+    }
+
+    .OG-sub-title {
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    .transprent_place h1 {
+        font-size: 36px;
+        padding-top: 20%;
+    }
+
+    .OVR-contain {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .OVR-contain h1 {
+        font-size: 18px;
+    }
+
+    .OV p {
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+
+    .OM {
+        padding: 3%;
+    }
+
+    .OVM-contain h1 {
+        font-size: 24px;
+    }
+
+    .our-Mission h1 {
+        font-size: 28px;
+    }
+
+    .arrow-bullet li {
+        font-size: 16px;
+        margin-bottom: 6px;
+        padding-left: 5%;
+    }
+
+    .OM p {
+        font-size: 18px;
+    }
+
+    .board-members {
+        padding: 3%;
+    }
+
+    .board-members h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        margin: 15px auto;
+        padding: 0.5em 8%;
+    }
+
+    .OBI-1 h1 {
+        padding-top: 3%;
+    }
+
+    .OBI-1 h3 {
+        font-size: 14px;
+    }
+
+    .OBI-1 p {
+        font-size: 12px;
+    }
+
+    .OBI-1 img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .our-board h1 {
+        font-size: 18px;
+    }
+
+    .support_img {
+        padding: 3%;
+    }
+
+    .GI img {
+        padding: 3%;
+    }
+
+    .GI p {
+        padding: 3%;
+    }
+
+    .GI-contain h2 {
+        font-size: 24px;
+    }
+
+    .get-involved {
+        font-size: 20px;
+        padding-top: 2%;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-logo {
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+    }
+
+    .footer-logo-text {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icons a i {
+        font-size: 18px;
+    }
+
+    .contact-info h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .tagline {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .mentor-card{
+        max-width: 190px !important;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2%;
+    }
+
+    .cirpi-title {
+        font-size: 28px;
+    }
+
+    .hero-sub-title {
+        font-size: 12px;
+    }
+
+    .intro_container {
+        margin-top: 4%;
+    }
+
+    .intro-head h1 {
+        font-size: 24px;
+    }
+
+    .intro-text p {
+        font-size: 14px;
+        padding: 1%;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .card-body {
+        padding: 4%;
+    }
+
+    .OG-contain {
+        padding: 1%;
+        margin-left: 0;
+    }
+
+    .OG-title {
+        padding-top: 3%;
+    }
+
+    .OG-sub-title {
+        font-size: 18px;
+    }
+
+    .transprent_place h1 {
+        font-size: 28px;
+        padding-top: 35%;
+    }
+
+    .OVR-contain {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .OVR-contain h1 {
+        font-size: 16px;
+    }
+
+    .OV p {
+        font-size: 16px;
+        padding-bottom: 1%;
+    }
+
+    .OM {
+        padding: 1%;
+    }
+
+    .OVM-contain h1 {
+        font-size: 20px;
+    }
+
+    .our-Mission h1 {
+        font-size: 24px;
+    }
+
+    .arrow-bullet li {
+        font-size: 14px;
+        margin-bottom: 4px;
+        padding-left: 7%;
+    }
+
+    .OM p {
+        font-size: 16px;
+    }
+
+    .board-members {
+        padding: 1%;
+    }
+
+    .board-members h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 14px;
+        margin: 10px auto;
+        padding: 0.5em 5%;
+    }
+
+    .OBI-1 h1 {
+        padding-top: 2%;
+    }
+
+    .OBI-1 h3 {
+        font-size: 12px;
+    }
+
+    .OBI-1 p {
+        font-size: 10px;
+    }
+
+    .our-board h1 {
+        font-size: 16px;
+    }
+
+    .support_img {
+        padding: 1%;
+    }
+
+    .GI img {
+        padding: 1%;
+    }
+
+    .GI p {
+        font-size: 110%;
+        padding: 2%;
+    }
+
+    .GI-contain h2 {
+        font-size: 20px;
+    }
+
+    .get-involved {
+        font-size: 18px;
+        padding-top: 1%;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .col-lg-6.col-sm-6 {
+        text-align: center !important;
+    }
+
+    .footer-logo {
+        max-width: 120px;
+    }
+
+    .footer-logo-text {
+        font-size: 24px;
+        margin-top: 8px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-icons a i {
+        font-size: 16px;
+    }
+
+    .contact-info h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        margin-bottom: 8px;
+        gap: 6px;
+
+    }
+
+    .tagline {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        padding: 4%;
+    }
+
+    .cirpi-title {
+        font-size: 48px;
+    }
+
+    .intro_container {
+        margin-top: 2%;
+    }
+
+    .intro-head h1 {
+        font-size: 36px;
+    }
+
+    .intro-text p {
+        padding: 2%;
+    }
+
+    .card-body {
+        padding: 4%;
+    }
+
+    .OG-contain {
+        padding: 2%;
+        margin-left: 1%;
+    }
+
+    .OG-sub-title {
+        margin-right: 5%;
+        font-size: 22px;
+    }
+
+    .OG-text {
+        margin-right: 5%;
+    }
+
+    .transprent_place h1 {
+        font-size: 48px;
+        padding-top: 18%;
+    }
+
+    .OVR-contain {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .OVR-contain h1 {
+        font-size: 18px;
+    }
+
+    .OV p {
+        padding-bottom: 2%;
+    }
+
+    .OM {
+        padding: 2%;
+    }
+
+    .OVM-contain h1 {
+        font-size: 28px;
+    }
+
+    .our-Mission h1 {
+        font-size: 36px;
+    }
+
+    .arrow-bullet li {
+        margin-bottom: 6px;
+        /* padding-left: 2%; */
+    }
+
+    .board-members {
+        padding: 2%;
+    }
+
+    .board-members h1 {
+        font-size: 36px;
+    }
+
+    .btn {
+        margin: 18px auto;
+        padding: 0.5em 8%;
+    }
+
+    .OBI-1 h1 {
+        padding-top: 4%;
+    }
+
+    .our-board h1 {
+        font-size: 18px;
+    }
+
+    .support_img {
+        padding: 2%;
+    }
+
+    .GI img {
+        padding: 2%;
+    }
+
+    .GI p {
+        padding: 4%;
+    }
+
+    .GI-contain h2 {
+        font-size: 30px;
+    }
+
+    .get-involved {
+        font-size: 22px;
+        padding-top: 2%;
+    }
+
+    .footer {
+        padding: 35px 18px;
+    }
+
+    .footer-logo {
+        margin-left: 20%;
+    }
+
+    .footer-logo-text {
+        font-size: 30px;
+        margin-top: 12px;
+    }
+
+    .social-icons {
+        margin-top: 18px;
+        gap: 12px;
+    }
+
+    .social-icons a {
+        width: 42px;
+        height: 42px;
+    }
+
+    .social-icons a i {
+        font-size: 19px;
+    }
+
+    .contact-info h1 {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+
+    .contact-info p {
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .tagline {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-logo {
+        margin-left: 10%;
+    }
+
+    .footer-logo-text {
+        font-size: 26px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+
+        max-width: 180px;
+        margin-left: 10%;
+    }
+    .footer-logo-text {
+        font-size: 18px !important;
+        margin-top: 12px;
+    }
+    .cin-number {
+    font-size: 14px !important;
+}
+}
+
+
+@media (max-width: 575px) {
+    .footer-logo {
+        max-width: 250px;
+        margin-left: 25%;
+    }
+
+    .footer-logo-text {
+        font-size: 24px !important;
+        margin-top: 12px;
+    }
+        .cin-number {
+    font-size: 14px !important;
+}
+}
+
+@media (max-width: 500px) {
+    .footer-logo {
+        margin-left: 18%;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-logo {
+        margin-left: 20%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 343px) {
+    .footer-logo-text {
+        font-size: 20px !important;
+        margin-top: 12px;
+    }
+
+    .footer-logo {
+        margin-left: 15%;
+        max-width: 200px;
+    }
+        .transprent_place h1 {
+        font-size: 36px;
+        padding-top: 30%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .hero {
+        padding: 1%;
+    }
+
+    .hero_container {
+        padding: 6px;
+    }
+
+    .cirpi_text {
+        font-size: 30px !important;
+        display: block;
+    }
+
+    .cirpi-title {
+        font-size: 24px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .hero-sub-title {
+        font-size: 9.5px;
+    }
+
+    .intro_container {
+        margin-top: 5%;
+    }
+
+    .intro-head h1 {
+        font-size: 20px;
+    }
+
+    .intro-text p {
+        font-size: 12px;
+        padding: 1%;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .card-body {
+        padding: 6%;
+    }
+
+    .OG-contain {
+        padding: 1%;
+        margin-left: 0;
+    }
+
+    .OG-title {
+        padding-top: 4%;
+    }
+
+    .OG-sub-title {
+        font-size: 16px;
+    }
+
+    .transprent_place h1 {
+        font-size: 24px;
+        padding-top: 30%;
+    }
+
+    .OVR-contain {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .OVR-contain h1 {
+        font-size: 14px;
+    }
+
+    .OV p {
+        font-size: 14px;
+        padding-bottom: 1%;
+    }
+
+    .OM {
+        padding: 1%;
+    }
+
+    .OVM-contain h1 {
+        font-size: 18px;
+    }
+
+    .our-Mission h1 {
+        font-size: 20px;
+    }
+
+    .arrow-bullet li {
+        font-size: 12px;
+        margin-bottom: 3px;
+        padding-left: 9%;
+    }
+
+    .OM p {
+        font-size: 14px;
+    }
+
+    .board-members {
+        padding: 1%;
+    }
+
+    .board-members h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        margin: 8px auto;
+        padding: 0.4em 4%;
+    }
+
+    .OBI-1 h1 {
+        padding-top: 1%;
+    }
+
+    .OBI-1 h3 {
+        font-size: 10px;
+    }
+
+    .OBI-1 p {
+        font-size: 8px;
+    }
+
+    .our-board h1 {
+        font-size: 14px;
+    }
+
+    .support_img {
+        padding: 1%;
+    }
+
+    .GI img {
+        padding: 1%;
+    }
+
+    .GI p {
+        font-size: 100%;
+        padding: 1%;
+    }
+
+    .GI-contain h2 {
+        font-size: 18px;
+    }
+
+    .get-involved {
+        font-size: 16px;
+        padding-top: 1%;
+    }
+
+    .footer {
+        padding: 15px 5px;
+    }
+
+    .col-lg-6.col-sm-6 {
+        text-align: center !important;
+    }
+
+    .footer-logo-text {
+        font-size: 20px !important;
+        margin-top: 12px;
+    }
+
+    .footer-logo {
+        margin-left: 10%;
+        max-width: 200px;
+    }
+
+
+    .social-icons {
+        margin-top: 8px;
+        gap: 5px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-icons a i {
+        font-size: 14px;
+    }
+
+    .contact-info h1 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .contact-info p {
+        font-size: 12px;
+        margin-bottom: 12px;
+        gap: 4px;
+    }
+
+    .contact-info p i {
+        font-size: 18px;
+    }
+
+    .tagline {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 283px) {
+    .footer-logo-text {
+        font-size: 18px !important;
+        margin-top: 2px;
+    }
+    .footer-logo {
+        margin-left: 10%;
+        max-width: 180px;
+    }
+}
+@media (max-width: 258px) {
+    .footer-logo-text {
+        font-size: 16px !important;
+        margin-top: 2px;
+    }
+    .footer-logo {
+        margin-left: 10%;
+        max-width: 180px;
+    }
+}

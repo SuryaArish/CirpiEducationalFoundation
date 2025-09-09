@@ -1,0 +1,498 @@
+.logo {
+    width: 150% !important;
+    height: auto;
+}
+
+
+.navbar {
+    background-color: #003257;
+}
+
+.navbar-brand img {
+    width: 80%;
+    max-width: 200px;
+    padding-left: 20px;
+}
+
+.first-link {
+    margin-left: 20px;
+}
+
+
+.donate-btn {
+    color: #e7e7e7;
+    background-color: #001f42;
+    border: none;
+    font-weight: bold;
+    padding: 7px 14px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scale(1);
+    border-radius: 8px;
+    margin-left: auto;
+}
+
+.navbar-nav {
+    gap: 10px;
+    padding: 4px 3px 4px 3px;
+    background-color: #d8e5f0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.nav-link {
+    color: #003257 !important;
+    font-weight: bold !important;
+}
+
+.popup {
+    overflow-y: auto;
+    width: 60% !important;
+    max-height: 90vh !important;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.3s, visibility 0s 0.3s;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    scrollbar-width: none;
+    background-color: #ffffff;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s;
+}
+
+.popup p {
+    color: #003257;
+    /* font-size: 130%; */
+    text-align: justify;
+}
+
+.popup label {
+    color: #003257;
+    font-size: 130%;
+    text-align: center;
+}
+
+
+.popup label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.popup input {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#qrSection {
+    margin-top: 20px;
+}
+
+
+
+
+.volunteer-success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+.volunteer-success-popup .popup-content h2 {
+    color: #E4FEFF;
+}
+
+.volunteer-success-popup button {
+    background: #001f42;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fixed-donate-btn i {
+    font-size: 24px;
+    transition: margin 0.3s ease;
+}
+
+/* Hover Effect - Expand Button */
+.fixed-donate-btn:hover {
+    width: 170px;
+    padding: 0 20px;
+    justify-content: flex-start;
+}
+
+/* Show Text on Hover */
+.fixed-donate-btn:hover .donate-text {
+    opacity: 1;
+    display: inline;
+}
+
+/* Move Icon on Hover */
+.fixed-donate-btn:hover i {
+    margin-right: 10px;
+}
+
+
+.fixed-donate-btn {
+    position: fixed;
+    bottom: 60% !important;
+    /* Places the button closer to the bottom */
+    right: 0% !important;
+    z-index: 1000 !important;
+    /* Keeps it above other elements */
+    margin-bottom: 1% !important;
+    /* Ensures no extra spacing */
+    padding: 0;
+}
+
+.donate-text {
+    opacity: 0;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+.fixed-donate-btn:hover .donate-text {
+    opacity: 1;
+    display: inline;
+}
+
+.volunteer-btn,
+.fixed-donate-btn {
+    position: fixed;
+    bottom: 50%;
+    margin-top: 40px !important;
+    right: 0 !important;
+    background-color: #B20000;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.6s ease;
+    transform: scale(1) !important;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.volunteer-btn i {
+    font-size: 24px;
+    transition: margin 0.3s ease;
+}
+
+/* Hover Effect - Expand Button */
+.volunteer-btn:hover {
+    width: 170px;
+    padding: 0 20px;
+    /* transition-delay: 0.5s !important; */
+    justify-content: flex-start;
+}
+
+/* Show Text on Hover */
+.volunteer-btn:hover .volunteer-text {
+    opacity: 1;
+    display: inline;
+}
+
+/* Move Icon on Hover */
+.volunteer-btn:hover i {
+    margin-right: 10px;
+}
+
+
+.volunteer-btn {
+    position: fixed !important;
+    z-index: 1000 !important;
+    /* Keeps it above other elements */
+    margin: 0;
+    /* Ensures no extra spacing */
+    padding: 0;
+}
+
+/* Initially Hide Text */
+.volunteer-text {
+    opacity: 0;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+.volunteer-btn:hover .volunteer-text {
+    opacity: 1;
+    display: inline;
+}
+
+.volunteer-btn:hover {
+    width: 170px;
+    padding: 0 20px;
+    /* transition-delay: 0.5s !important; */
+    justify-content: flex-start;
+}
+
+/* Large tablets and small laptops */
+@media (max-width: 1200px) {
+    .navbar-brand img {
+        max-width: 180px;
+    }
+
+    .popup {
+        width: 70% !important;
+    }
+}
+
+
+/* Tablets */
+@media (max-width: 991px) {
+    .navbar-nav {
+        gap: 10px;
+        padding: 4px 3px 4px 3px;
+        background-color: #d8e5f0;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .first-link {
+        margin-left: 0px;
+    }
+
+    .nav-link {
+        padding-left: 20px !important;
+    }
+
+    .donate-btn {
+        margin-bottom: 10px;
+         margin-left: 15px;
+
+    }
+
+    .navbar-toggler {
+        background-color: #ffffff !important;
+        margin-right: 5%;
+    }
+
+    .popup {
+        width: 80% !important;
+    }
+
+    .volunteer-btn,
+    .fixed-donate-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .volunteer-btn:hover,
+    .fixed-donate-btn:hover {
+        width: 150px;
+    }
+}
+
+/* Large mobile devices */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 70%;
+        max-width: 150px;
+        padding-left: 15px;
+    }
+
+    .popup {
+        width: 90% !important;
+        padding: 15px;
+    }
+
+    .popup input {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .volunteer-btn,
+    .fixed-donate-btn {
+
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        bottom: 45%;
+    }
+
+    .volunteer-btn:hover,
+    .fixed-donate-btn:hover {
+        width: 130px;
+        padding: 0 15px;
+    }
+
+    .donate-text,
+    .volunteer-text {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 60%;
+        max-width: 120px;
+        padding-left: 10px;
+    }
+
+    .donate-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .popup {
+        width: 95% !important;
+        padding: 10px;
+        max-height: 85vh !important;
+    }
+
+    .popup p {
+        font-size: 14px;
+    }
+
+    .popup label {
+        font-size: 16px;
+    }
+
+    .volunteer-btn,
+    .fixed-donate-btn {
+
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        bottom: 40%;
+    }
+
+    .volunteer-btn:hover,
+    .fixed-donate-btn:hover {
+        width: 120px;
+        padding: 0 12px;
+    }
+
+    .volunteer-btn i,
+    .fixed-donate-btn i {
+        font-size: 15px;
+    }
+
+    .donate-text,
+    .volunteer-text {
+        font-size: 12px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        width: 50%;
+        max-width: 100px;
+        padding-left: 5px;
+    }
+
+    .nav-link {
+        padding-left: 15px !important;
+        font-size: 14px;
+    }
+
+    .donate-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    .popup {
+        width: 98% !important;
+        padding: 8px;
+    }
+
+    .volunteer-btn,
+    .fixed-donate-btn {
+        width: 35px;
+        height: 35px;
+
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        font-size: 14px;
+        bottom: 50%;
+    }
+
+    .volunteer-btn:hover,
+    .fixed-donate-btn:hover {
+        width: 100px;
+        padding: 0 10px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+    .navbar-brand img {
+        max-width: 80px;
+    }
+
+    .popup {
+        padding: 30px;
+    }
+
+    .volunteer-btn,
+    .fixed-donate-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        bottom: 50%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .volunteer-btn i,
+    .fixed-donate-btn i {
+        font-size: 15px;
+    }
+
+    .volunteer-btn:hover,
+    .fixed-donate-btn:hover {
+        width: 90px;
+    }
+}

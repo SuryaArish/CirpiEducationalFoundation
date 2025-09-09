@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+
+    <!-- <script defer src="index.js"></script> -->
+    <link rel="stylesheet" href="nav.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome (latest) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="#home" target="_blank">
+            <img src="./images/cirpi_logo.png" class="logo" alt="cirpi_logo">
+        </a>
+
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link first-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#get-involved">Get Involved</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                <li class="nav-item">
+                    <button class="donate-btn" onclick="openPopup('popup_donate')">Donate</button>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Blur Overlay -->
+    <div id="blur-overlay" onclick="closePopup('popup_donate')"></div>
+
+    <!-- Donation Popup -->
+    <div class="popup" id="popup_donate">
+        <div class="intro-head text-center mb-3">
+            <h1 class="vol-head">Support CIRPI Educational Foundation</h1>
+            <p class="vol-head1">Your donation helps us provide educational resources and mentorship.</p>
+        </div>
+
+        <form class="donation-form" id="donationForm">
+            <label class="DF-name" for="donorName">Name:</label>
+            <input type="text" id="donorName" name="donorName" class="volunteer-input" placeholder="Enter your name" required>
+
+            <label class="DF-Email" for="donorEmail">Email:</label>
+            <input type="email" id="donorEmail" name="donorEmail" class="volunteer-input"  placeholder="Enter your Email" required >
+
+            <label class="DF-Mobile" for="donorMobile">Mobile Number:</label>
+            <input type="number" id="donorMobile" name="donorMobile" class="volunteer-input"  placeholder="Enter your Phone Number" required>
+
+            <button type="submit" class="donate-btn w-100 mb-3">Proceed to Donate</button>
+        </form>
+
+        <button class="donate-btn mb-3" onclick="closePopup('popup_donate')">Close</button>
+
+
+        <!-- QR Section -->
+        <div id="qrSection" style="display: none;">
+            <div class="rounded shadow-sm bg-white p-4">
+                <div class="text-center mb-4">
+                    <h1 class="fw-bold Qr-text" style="color: #001f42;">One Payment, Big Impact</h1>
+                </div>
+                <div class="text-start mb-4">
+                    <h4 class="fw-semibold text-center mb-3 Qr-text" style="color: #001f42;">Payment Details</h4>
+                    <p><strong>UPI ID:</strong> 8807733371@hdfcbank</p>
+                    <p><strong>Account Name:</strong> CIRPI EDUCATIONAL FOUNDATION</p>
+                    <p><strong>Account Number:</strong> 50200099529008</p>
+                    <p><strong>Branch:</strong> TIRUPATTUR</p>
+                    <p><strong>IFSC Code:</strong> HDFC0002053</p>
+                    <p><strong>Account Type:</strong> CURRENT</p>
+                    <p><strong>Bank Name:</strong> HDFC Bank</p>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="fw-semibold text-center">Have you completed the payment?</p>
+                    <button class="donate-btn me-3 px-4 py-2" onclick="closePopup('popup_donate')">Yes</button>
+                    <button class="donate-btn px-4 py-2" onclick="closePopup('popup_donate')">No</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup" id="popup_volunteer">
+        <div class="intro-head">
+            <h1 class="vol-head">Join as a Volunteer</h1>
+            <p class="vol-head1">Fill in the details to become a part of CIRPI Educational Foundation.</p>
+        </div>
+
+        <div class="volunteer-container ">
+
+            <form class="volunteer-form">
+                <label for="volunteer-name" class="volunteer-label">Name:</label>
+                <input type="text" id="volunteer-name" class="volunteer-input" placeholder="Enter your name" required>
+
+                <label for="volunteer-email" class="volunteer-label">Email:</label>
+                <input type="email" id="volunteer-email" class="volunteer-input" placeholder="Enter your email"
+                    required>
+
+                <label for="volunteer-phone" class="volunteer-label">Phone Number:</label>
+                <input type="text" id="volunteer-phone" class="volunteer-input" placeholder="Enter your phone number"
+                    required>
+
+                <button type="submit" class="volunteer-submit-btn donate-btn">Submit</button>
+            </form>
+        </div>
+
+        <button class="donate-btn cancel-but" onclick="closePopup('popup_volunteer')">Close</button>
+    </div>
+
+    <!-- DOnate Button -->
+    <div class="d-flex justify-content-center align-items-center">
+        <button class="fixed-donate-btn" onclick="openPopup('popup_donate')">
+            <i class="fas fa-hand-holding-heart"></i>
+            <span class="donate-text bold">DONATE</span>
+        </button>
+    </div>
+
+    <!-- Volunteer Button -->
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="volunteer-btn" onclick="openPopup('popup_volunteer')">
+            <i class="fa-solid fa-users"></i>
+            <span class="volunteer-text bold">VOLUNTEER</span>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid section hero_section">
+        <section class="hero  text-center ">
+            <div class="hero_container">
+                <h1 class="cirpi-title"><span class="cirpi_text">CIRPI </span>Educational Foundation</h1>
+                <br>
+                <p class="hero-sub-title">
+                    Empowering minds, shaping futures. CIRPI Educational Foundation is dedicated
+                </p>
+                <p class="hero-sub-title">
+                    to providing quality education, fostering innovation, and inspiring lifelong
+                </p>
+                <p class="hero-sub-title">
+                    learning. Together, let's build a brighter tomorrow
+                </p>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+    <div class="container-fluid intro_container">
+        <div class="row">
+            <div class="intro-head">
+                <h1>Welcome to <span class="head">CIRPI Educational Foundation</span> </h1>
+            </div>
+            <div class="col-xl-7 col-md-12 col-sm-12">
+
+                <div class="intro-text">
+                    <p>
+                        At Cirpi Educational Foundation, we are committed to empowering students from economically
+                        disadvantaged backgrounds by providing financial assistance for higher education and
+                        hands-on
+                        training. Our goal is to bridge the gap between academic learning and career success,
+                        equipping
+                        students with the practical skills, mentorship, and leadership abilities they need to excel
+                        in
+                        their
+                        chosen fields.
+
+                        Through our unique combination of financial support and experiential learning, we help
+                        students
+                        not
+                        only gain an education but also develop the real-world skills necessary to thrive in today’s
+                        fast-paced, ever-changing industries. We believe in nurturing future leaders, innovators,
+                        and
+                        changemakers who will drive positive social change and contribute meaningfully to their
+                        communities.
+
+                        Join us on our mission to shape brighter futures, one student at a time.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-md-12 col-sm-12">
+                <img class="Intro-img w-100" src="./images/intro-image.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid og-con pb-5">
+        <div class="our-vision p-3">
+            <h1 class="text-center og-name">Our Goals</h1>
+        </div>
+        <div class="row g-4 og-container">
+
+
+            <div class="col-12 col-sm-6 col-lg-6">
+                <div class="card custom-card shadow" id="card1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-dark">Worldwide Growth</h5>
+                        <p class="card-text text-dark">
+                            Expand our impact to support students from rural areas, urban slums, and globally, fostering
+                            international exchange.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-6">
+                <div class="card custom-card shadow" id="card2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-dark">Holistic Growth</h5>
+                        <p class="card-text text-dark">
+                            Go beyond traditional education by incorporating
+                            internships, live projects, and industry collaborations, enabling hands-on
+                            learning and innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-6">
+                <div class="card custom-card shadow" id="card2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-dark">Leadership & Innovation</h5>
+                        <p class="card-text text-dark">
+                            Nurture future leaders who can not only pursue successful
+                            careers
+                            but also drive social change and contribute meaningfully to their
+                            communities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-6">
+                <div class="card custom-card shadow" id="card1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold text-dark">Sustainable Independence</h5>
+                        <p class="card-text text-dark">
+                            Enable our students to become self-reliant, capable of
+                            securing
+                            their own opportunities and sustaining their careers long after their
+                            education.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="transprent_place section ">
+        <h1>Your Small Help Can Spark a <span class="tp-bright">Bright Future</span> </h1>
+    </div>
+
+
+    <div class="Our-Vission">
+        <div class="container-fluid section OV">
+            <div class="our-vision p-3">
+                <h1>Our Vision</h1>
+            </div>
+            <div class="container-fluid OVR-contain">
+                <p class="OV-text">At Cirpi Educational Foundation, we envision a world where every student, regardless
+                    of their
+                    background,
+                    has access to quality education, hands-on learning, and career-building opportunities. By
+                    bridging
+                    the
+                    gap between theoretical knowledge and real-world applications, we equip students with financial
+                    assistance, mentorship, and practical training to help them excel in their fields, innovate
+                    solutions,
+                    and lead industries with purpose. Beyond academics, we focus on holistic development, fostering
+                    leadership, problem-solving skills, and a mindset of lifelong learning. Through a collaborative
+                    and
+                    inclusive educational ecosystem, we strive to create future professionals who not only thrive in
+                    their
+                    careers but also drive positive change, contributing to a more equitable, innovative, and
+                    socially
+                    responsible world. Our mission is to nurture future professionals who will lead industries,
+                    innovate solutions, and
+                    contribute to a more equitable world.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid section OM">
+
+        <div class="container-fluid OVM-contain">
+
+            <div class="row">
+                <div class="col-xl-5 col-md-12 col-sm-12 OV-img-col">
+                    <img class="OV-img" src="./images/OV-Mission-1.png" alt="">
+                </div>
+
+                <div class="col-xl-7 col-md-12 col-sm-12">
+                    <div class="our-Mission ">
+                        <h1 class="text-center OM-Mission">Our Mission</h1>
+                    </div>
+                    <h1 class="pt-4 pb-3">Empowering Dreams, Shaping Futures</h1>
+                    <p class="our-mission-text">At CIRPI Educational Foundation, we envision a future where no
+                        student's
+                        potential is limited by
+                        their economic background.
+                        Our mission goes beyond financial support—it focuses on creating self-sustaining,
+                        future-ready
+                        professionals.
+                        We aim to be a beacon of hope for young minds by offering a holistic, hands-on approach to
+                        learning.
+                        Our goal is to help students not only succeed in studies but also thrive in their careers.
+                    </p>
+
+                    <ul class="arrow-bullet">
+                        <li>Financial aid for education.</li>
+                        <li>Industry partnerships to bridge education and employment.</li>
+                        <li>Mentorship programs for career guidance and personal growth.</li>
+                        <li>Skill development initiatives to build future-ready professionals.</li>
+                        <li>Creating a self-sustaining ecosystem for continuous learning and growth.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="about-us" class="container-fluid section our-board">
+        <div class="container">
+            <div class="board-members">
+                <h1 class="board-head">Our Board</h1>
+            </div>
+            <div class="row">
+
+                <!-- Mr. Raghul Vijayan -->
+                <div class="col-xl-3 col-md-6 col-sm-12  OBI-1 rahul-col">
+                    <img class="raghul-img rag-2" src="./images/raghul.png" alt="raghul">
+                    <h1>Mr Raghul Vijayan</h1>
+                    <p>Cognizant,Chennai</p>
+                    <button class="btn" onclick="openPopup('popup_raghul');">Read More</button>
+                    <div class="popup" id="popup_raghul">
+                        <img class="pop_img" src="./images/raghul.png" alt="raghul">
+                        <h1>Mr Raghul Vijayan</h1>
+                        <h3>Founder</h3>
+                        <p>As the founder of Cirpi Educational Foundation, Raghul Vijayan has always been passionate
+                            about transforming education through skill-based learning. An engineer by profession, he
+                            is dedicated to bridging the gap between theoretical knowledge and real-world
+                            application, ensuring that students gain both academic excellence and practical
+                            expertise.</p>
+
+                        <p> With a strong commitment to empowering learners, he actively contributes to Cirpi’s
+                            initiatives, providing mentorship, financial aid, and career-building opportunities. His
+                            vision centers on creating an education system that fosters innovation, problem-solving,
+                            and industry readiness, equipping students to excel in their professional journeys. </p>
+
+                        <p> His leadership has been pivotal in expanding Cirpi’s impact by forging strong
+                            partnerships with educators, industry leaders, and institutions that prioritize quality
+                            education. He firmly believes that structured learning, hands-on experience, and
+                            continuous skill development are essential for preparing students for the evolving job
+                            market.</p>
+
+                        <p> Beyond academics, he advocates for lifelong learning, adaptability, and an
+                            entrepreneurial mindset, encouraging students to embrace new technologies and think
+                            critically. Under his guidance, Cirpi has grown into a platform that nurtures young
+                            talent, drives innovation, and delivers meaningful educational programs that shape
+                            future leaders.
+                        </p>
+                        <button class="btn" onclick="closePopup('popup_raghul')">Read Less</button>
+                    </div>
+                </div>
+
+                <!-- Mr. Gokul Kittusamy -->
+                <div class="col-xl-3 col-md-6 col-sm-12 gokul-col OBI-1">
+                    <img class="gokul-img" src="./images/gokul-g.png" alt="gokul">
+                    <h1>Mr Gokul Kittusamy</h1>
+                    <p>Elerchitek CEO & MD, Chennai</p>
+                    <button class="btn d-flex justify-content-center align-items-center" onclick="openPopup('popup_gokul')">
+                        Read More
+                    </button>
+                    <div class="popup" id="popup_gokul">
+                        <img class="pop_img" src="./images/gokul-g.png" alt="gokul">
+                        <h1>Mr Gokul Kittusamy</h1>
+                        <h3>Co-Founder</h3>
+                        <p> Gokul Kittusamy, co-founder of Cirpi Educational Foundation, is deeply committed to
+                            reshaping
+                            education through practical and skill-based learning. With an engineering background and
+                            a
+                            passion
+                            for innovation, he actively works towards bridging the gap between academic knowledge
+                            and
+                            real-world
+                            applications, ensuring that students receive not just theoretical understanding but also
+                            hands-on
+                            experience.</p>
+
+                        <p> His belief in education beyond textbooks drives him to create learning opportunities
+                            that equip
+                            students with critical thinking, problem-solving abilities, and the confidence to face
+                            real-world
+                            challenges. He envisions a future where students are not just job seekers but innovators
+                            and
+                            leaders
+                            who can shape industries and contribute to society in meaningful ways.</p>
+
+                        <p> Through Cirpi Educational Foundation, he continues to develop initiatives that emphasize
+                            experiential learning, mentorship, and career growth, enabling students from diverse
+                            backgrounds
+                            to
+                            reach their full potential. His dedication extends to collaborating with educators,
+                            industry
+                            professionals, and institutions to create a learning environment that fosters
+                            creativity,
+                            technical
+                            expertise, and entrepreneurial thinking. Under his leadership, Cirpi has launched
+                            numerous
+                            impactful
+                            programs, helping students acquire both technical and life skills that prepare them for
+                            success
+                            in a
+                            rapidly evolving world.</p>
+                        <button class="btn" onclick="closePopup('popup_gokul')">Read Less</button>
+                    </div>
+                </div>
+
+                <!-- Ms. Kaviya -->
+                <div class="col-xl-3 col-md-6 col-sm-12 OBI-1 gokul-col">
+                    <img class="kaviya-img" src="./images/kaviya.png" alt="kaviya">
+                    <h1>Ms Kaviya</h1>
+                    <p>Varahe Analytics,Chennai</p>
+                    <button class="btn" onclick="openPopup('popup_kaviya')">Read More</button>
+                    <div class="popup" id="popup_kaviya">
+                        <img class="pop_img" src="./images/kaviya.png" alt="kaviya">
+                        <h1>Ms Kaviya</h1>
+                        <h3>Secretary</h3>
+                        <p>Kaviya Senthilkumar, Secretary of Cirpi Educational Foundation, is dedicated to
+                            transforming education through policy-driven initiatives and inclusive learning
+                            strategies. With a background in political consulting and a passion for educational
+                            reform, she actively works to bridge gaps in accessibility, ensuring students receive
+                            opportunities that empower them beyond traditional academics.
+                        </p>
+
+                        <p>Her commitment to education equity drives her to design programs that support
+                            underprivileged students, equipping them with essential skills, critical thinking, and
+                            leadership qualities. She believes that education should not only impart knowledge but
+                            also nurture problem-solving abilities and confidence to navigate real-world challenges.
+                        </p>
+
+                        <p>Through Cirpi Educational Foundation, she focuses on building impactful collaborations
+                            with institutions, government bodies, and industry professionals, creating a strong
+                            support system for students. Her leadership ensures that Cirpi’s initiatives emphasize
+                            mentorship, career development, and experiential learning, enabling students to
+                            transition from education to meaningful career paths.</p>
+
+                        <p> She envisions a future where students are not just learners but leaders who contribute
+                            to society with innovation and purpose. Her strategic approach, coupled with hands-on
+                            involvement in program execution, helps Cirpi foster a dynamic and student-centric
+                            learning ecosystem that prepares individuals to thrive in an ever-changing world.</p>
+                        <button class="btn" onclick="closePopup('popup_kaviya')">Read Less</button>
+                    </div>
+                </div>
+
+                <!-- Ms. Preethi -->
+                <div class="col-xl-3 col-md-6 col-sm-12 OBI-1 gokul-col">
+                    <img src="./images/preethi-ad.png" alt="preethi">
+                    <h1>Ms Preethi</h1>
+                    <p>DELL , Bangalore</p>
+                    <button class="btn d-flex justify-content-center" onclick="openPopup('popup_preethi')">Read
+                        More</button>
+                    <div class="popup" id="popup_preethi">
+                        <img class="pop_img" src="./images/preethi-ad.png" alt="preethi">
+                        <h1>Ms Preethi</h1>
+                        <h3>Advisor</h3>
+                        <p>Preethi Damodharan is a highly skilled Software Engineer at Dell Technologies, where she
+                            plays a
+                            key role in developing cutting-edge technological solutions. With a strong foundation in
+                            software development and problem-solving, she has gained extensive experience in the
+                            tech
+                            industry, driving innovation and efficiency in her work.</p>
+
+                        <p>Beyond her professional achievements, Preethi is deeply committed to educational and
+                            social
+                            impact initiatives. As an Advisor and Mentor at Cirpi Educational Foundation, she plays
+                            a
+                            crucial role in shaping the foundation’s strategic direction. Her expertise in
+                            decision-making
+                            and long-term planning helps Cirpi navigate challenges and seize opportunities for
+                            growth.</p>
+
+                        <p>Preethi’s guidance and mentorship ensure that Cirpi stays true to its mission of
+                            empowering
+                            students by providing financial aid, skill development programs, and academic support.
+                            Her
+                            insights help in crafting effective educational strategies, ensuring that Cirpi remains
+                            a pillar
+                            of support for aspiring students.</p>
+                        <p>Her dedication to fostering innovation and learning makes her an invaluable asset to both
+                            Dell
+                            Technologies and Cirpi Educational Foundation, bridging the gap between technology and
+                            education
+                            to create a meaningful impact.</p>
+
+                        <button class="btn justify-content-center" onclick="closePopup('popup_preethi')">Read
+                            Less</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid section our-board">
+        <div class="board-members">
+            <h1 class="mentor-head">Our Team</h1>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/Siva.png" alt="Ms Preethi" class="img-fluid mentor-img">
+                                <h1>Mr Shiva Kumar</h1>
+                                <p>Manager Hope3</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/arumugam.png" alt="Mr Arumugam" class="img-fluid mentor-img">
+                                <h1>Mr Arumugam</h1>
+                                <p>TN Govt School Teacher</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/srinivasasn-sir.png" alt="Mr Srinivasan"
+                                    class="img-fluid mentor-img">
+                                <h1>Mr Srinivasan</h1>
+                                <p>Lions Club, Tambaram</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/saravanan-md.png" alt="Mr Saravanan" class="img-fluid mentor-img">
+                                <h1>Mr Saravanan</h1>
+                                <p>Accenture, Chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/kathik.png" alt="Mr Karthik" class="img-fluid mentor-img">
+                                <h1>Mr Karthik</h1>
+                                <p>USA</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/pooja.png" alt="Mr Ji" class="img-fluid mentor-img">
+                                <h1>MS Pooja</h1>
+                                <p>Unwitta, Coimbatore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid mentor-img">
+                                <h1>Ms Shamyuktha</h1>
+                                <p>Titan TEAL, Hosur</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/raji.png" alt="Ms Preethi" class="img-fluid mentor-img">
+                                <h1>Ms RajaLakshmi</h1>
+                                <p>Accenture, Chennai</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/jijith.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
+                                <h1>Mr Jijith Kumar</h1>
+                                <p>Head Bailiff, Coimbatore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/amrish.png" alt="Mr Amrish" class="img-fluid mentor-img">
+                                <h1>Mr Amrish</h1>
+                                <p>Ericsson, Chennai</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/yoga.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
+                                <h1>Mr Yoga Balaji</h1>
+                                <p>MuSigma, Bangalore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/lekha.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                                <h1>Ms Lekha</h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/govind.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
+                                <h1>Mr Govindha Raman</h1>
+                                <p>Software developer</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/karthik.png" alt="Mr Amrish" class="img-fluid mentor-img">
+                                <h1>Mr Arivarasan</h1>
+                                <p>Science mentor</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/naveen-bro.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
+                                <h1>Mr NaveenKumar</h1>
+                                <p>Cognizant,Chennai</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/sarava.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                                <h1>Mr Saravanan A </h1>
+                                <p>Accenture, Chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/suriya.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
+                                <h1>Mr Jaya Suriya</h1>
+                                <p>HCL, Chennai</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/sample-logo.png" alt="Mr Amrish" class="img-fluid mentor-img">
+                                <h1>Mr Sathis Kumar</h1>
+                                <p>India Post</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
+                                <h1>Mr Sarathbawar</h1>
+                                <p>India Post</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/naveen.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                                <h1>Mr Navaneethan </h1>
+                                <p>Safty Engineer, Chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="get-involved" class="container-fluid GI GI-contain">
+        <div class="get-involved">
+            <h1>Get Involved</h1>
+        </div>
+        <div class="row">
+            <div class="col-6 vol-col text-center">
+                <img class="support_img" src="./images/volunteer.png" alt="volunteer_img">
+                <h2 class="GI-head">Volunteer With Us</h2>
+                <p class="GI-text">Offer your skills and time to mentor students or contribute to educational
+                    programs.
+                    Sharing
+                    knowledge can inspire and empower learners, creating a positive impact on their academic <span
+                        class="GI-span"> and
+                        personal growth</span></p>
+            </div>
+
+            <div class="col-6 text-center">
+                <img class="support_img" src="./images/support.png" alt="support_img">
+                <h2 class="GI-head">Support With Us</h2>
+                <p class="GI-text">Make a difference today by contributing to education programs. Your support
+                    creates
+                    learning
+                    opportunities for students in need. Together, we can shape a brighter future and inspire the
+                    next generation.</p>
+            </div>
+        </div>
+    </div>
+    <div id="blur-overlay">
+    </div>
+    <div id="contact-us" class="container-fluid footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Logo and Social -->
+                <div class="col-lg-6 col-sm-6 text-lg-start mb-4 mb-lg-0">
+                    <img class="footer-logo" src="images/cirpi_logo.png" alt="Cirpi Logo">
+                    <div class="footer-logo-text text-center">Educational Foundation</div>
+                    <div class="social-icons justify-content-center ">
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/cirpi_edu?utm_source=qr&igsh=OWc0bDFjNHY1enJq"><img
+                                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Info -->
+                <div class="col-lg-6 col-sm-6 contact-info text-center text-lg-start">
+                    <h1>Contact Us</h1>
+                    <p><i class="fas fa-map-marker-alt"></i>No 8, Raja Street, Salangapalayam,<br>Bhavani(TK),
+                        Erode(Dt).</p>
+                    <p><i class="fas fa-phone-alt"></i>+91 88077 33343</p>
+                    <p><i class="fas fa-envelope"></i>info@cirpie.in</p>
+                </div>
+            </div>
+
+            <!-- Tagline -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="tagline text-center"># Empowering Knowledge, Transforming Tomorrow</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+</html>
