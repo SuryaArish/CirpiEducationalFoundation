@@ -1,3 +1,4 @@
+
 .hero {
     background-image: url("./images/student_img.png");
     background-size: cover;
@@ -537,6 +538,15 @@
     font-weight: bold;
     font-style: italic;
     margin-top: 20px;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari, Edge */
 }
 
 #blur-overlay {
