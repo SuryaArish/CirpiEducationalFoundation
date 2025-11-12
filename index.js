@@ -6,6 +6,7 @@ function openPopup(popupId) {
     const blurOverlay = document.getElementById('blur-overlay');
     
     if (popup && blurOverlay) {
+        document.body.style.overflow = 'hidden';
         popup.style.cssText = 'display: block !important; position: fixed !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important; background: white !important; padding: 30px !important; border-radius: 15px !important; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important; z-index: 1000 !important; max-width: 500px !important; width: 90% !important; max-height: 80vh !important; overflow-y: auto !important; visibility: visible !important; opacity: 1 !important;';
         blurOverlay.style.display = 'block';
         blurOverlay.style.zIndex = '999';
@@ -20,6 +21,7 @@ function closePopup(popupId) {
     const blurOverlay = document.getElementById('blur-overlay');
     
     if (popup && blurOverlay) {
+        document.body.style.overflow = '';
         popup.style.display = 'none';
         blurOverlay.style.display = 'none';
         if (popupId === 'popup_donate') {
@@ -32,6 +34,7 @@ function closeAllPopups() {
     const popups = document.querySelectorAll('.popup');
     const blurOverlay = document.getElementById('blur-overlay');
     
+    document.body.style.overflow = '';
     popups.forEach(popup => {
         popup.style.display = 'none';
     });

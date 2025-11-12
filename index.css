@@ -47,7 +47,7 @@
     color: #003257;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 3%;
 }
 
@@ -147,6 +147,7 @@
     color: #003257;
     font-size: 40px;
     font-weight: bold;
+    text-align: center !important;
 }
 
 .our-vision {
@@ -280,7 +281,7 @@
     font-weight: bold;
     font-size: 40px;
     color: #003257;
-    text-align: center;
+    text-align: center !important;
 }
 
 .OV-img-col {
@@ -345,6 +346,7 @@
 .board-members h1 {
     font-weight: bold;
     font-size: 40px;
+    text-align: center !important;
 }
 
 .btn {
@@ -449,6 +451,7 @@
 .get-involved h1 {
     font-weight: bold;
     color: #003257;
+    text-align: center !important;
 }
 
 
@@ -547,6 +550,15 @@
 
 .hide-scrollbar::-webkit-scrollbar {
     display: none;             /* Chrome, Safari, Edge */
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 #blur-overlay {
