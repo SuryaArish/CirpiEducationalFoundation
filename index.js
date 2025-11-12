@@ -1,4 +1,7 @@
 function openPopup(popupId) {
+    // Close all popups first
+    closeAllPopups();
+    
     const popup = document.getElementById(popupId);
     const blurOverlay = document.getElementById('blur-overlay');
     

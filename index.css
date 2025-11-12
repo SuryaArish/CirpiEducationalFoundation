@@ -567,6 +567,29 @@
     overflow-y: auto !important;
     display: none !important;
 }
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.popup-close:hover {
+    color: #000;
+}
 .cin-number{
     font-size: 18px !important;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -794,7 +817,7 @@
 
     .get-involved {
         font-size: 20px;
-        padding-top: 2%;
+        padding-top: 4% !important;
     }
 
     .footer {
